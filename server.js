@@ -44,11 +44,14 @@ let computeLeaderboard = () => {
   })
 
   leaderboard.sort((a, b) => {
-    let awr = 0;
+    let awr = a.wins * 2 - a.losses;
+    let bwr = b.wins * 2 - b.losses;
+
+    /*let awr = 0;
     if ((a.wins + a.losses) !== 0) awr = (a.wins/(a.wins + a.losses))
 
     let bwr = 0;
-    if ((b.wins + b.losses) !== 0) bwr = (b.wins/(b.wins + b.losses))
+    if ((b.wins + b.losses) !== 0) bwr = (b.wins/(b.wins + b.losses))*/
 
     return awr < bwr ? 1 : -1
   })

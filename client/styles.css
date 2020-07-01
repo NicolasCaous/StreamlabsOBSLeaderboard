@@ -14,7 +14,7 @@
 }
 
 .lboard_section{
-	width: 350px;
+	width: 450px;
 	height: 325px;
 	margin: 100px auto 0;
 	background: #009c3b;
@@ -76,7 +76,7 @@
 
 .lboard_wrap .lboard_mem .name_bar{
 	margin: 0 20px;
-	width: calc(100% - 150px);
+	width: calc(100% - 225px);
 }
 
 .lboard_wrap .lboard_mem .name_bar p{

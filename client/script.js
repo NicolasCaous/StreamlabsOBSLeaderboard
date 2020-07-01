@@ -35,7 +35,7 @@ socket.on('leaderboard_update', data => {
 		bar.style.width = wr;
 
 		let points = clone.querySelector("div.points");
-		points.innerText = "WR " + wr + " " + item.wins + "-" + item.losses;
+		points.innerText = "WR " + wr + " S " + (item.wins * 2 - item.losses) + " " + item.wins + "V-" + item.losses + "D";
 
 		parent.appendChild(clone)
 	})
